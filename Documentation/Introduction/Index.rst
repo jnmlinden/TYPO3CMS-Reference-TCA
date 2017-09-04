@@ -28,18 +28,18 @@ This document used to be a chapter inside :ref:`TYPO3 Core APIs <t3coreapi:start
 What's new
 ^^^^^^^^^^
 
-This version is updated for TYPO3 CMS 6.2. Here is a highlight of the
+This version is updated for TYPO3 CMS 7.6. Here is a summary of the
 main changes:
 
-- there's a new way to :ref:`register wizards <wizards-configuration>`,
+- There is a new way to :ref:`register wizards <wizards-configuration>`,
   which provides CSRF protection.
 
-- it's possible to :ref:`add a filter <columns-select-properties-enablemultiselectfiltertextfield>`
+- It is possible to :ref:`add a filter <columns-select-properties-enablemultiselectfiltertextfield>`
   to select-type fields.
 
-- :ref:`display conditions <columns-properties-displaycond>` have now bit operators.
+- :ref:`display conditions <columns-properties-displaycond>` now have bit operators.
 
-- take a deep look at the :ref:`inline-type fields (IRRE) <columns-inline>`
+- An in-depth look at the :ref:`inline-type fields (IRRE) <columns-inline>`
   which received many new properties, mostly related to the development of FAL.
 
 - the placeholder property (actually introduced in TYPO3 CMS 4.7,
@@ -62,13 +62,13 @@ version has been updated by François Suter.
 Feedback
 ^^^^^^^^
 
-For general questions about the documentation get in touch by writing
+For general questions about the documentation, get in touch by writing
 to `documentation@typo3.org <mailto:documentation@typo3.org>`_ .
 
 If you find a bug in this manual, please be so kind as to check the
 online version on https://docs.typo3.org/typo3cms/TCAReference/.
 From there you can hit the "Edit me on GitHub" button in the top right corner
-and submit a pull request via GitHub. Alternatively you can just file an issue
+and submit a pull request via GitHub. Alternatively, you can just file an issue
 using the bug tracker: https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TCA/issues.
 
 Maintaining high quality documentation requires time and effort
