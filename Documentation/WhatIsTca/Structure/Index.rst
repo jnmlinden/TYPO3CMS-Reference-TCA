@@ -28,6 +28,8 @@ they appear in the database)::
 Here three tables, "pages", "tt\_content" and "tx\_examples\_haiku" are shown as
 examples.
 
+Note: The variable `$TCA` is being used here in the global PHP scope. If this variable is to be referenced inside a function (or in general, a closure), then either "globals $TCA;" must be declared or the array $GLOBALS['TCA'] must be used instead.
+
 
 .. _tca-structure-level2:
 
@@ -59,7 +61,7 @@ The general structure (looking at a single table) is as follows::
    );
 
 The following table provides a brief description of each the various
-sections of $TCA. Each section is covered in more details in its own
+sections of $TCA. Each section is covered in more detail in its own
 chapter.
 
 
@@ -76,16 +78,16 @@ chapter.
          These are basically divided in two main categories:
 
          - properties which affect how the table is  *displayed* and handled in
-           the backend  *interface* .This includes which icon, what name, which
-           columns contains the title value, which column defines the type value
+           the backend  *interface*. This includes which icon, what name, which
+           columns contains the title value, which column defines the type value,
            etc.
 
          - properties which determine how it is processed by the system
            (TCE).This includes publishing control, "deleted" flag, whether the table
-           can only be edited by admin-users, may only exist in the tree root
+           can only be edited by admin-users, may only exist in the tree root,
            etc.
 
-         -  For all tables configured in $TCA this section must exist.
+         For all tables configured in $TCA, this section must exist.
 
          :ref:`Full reference <ctrl>`
 
