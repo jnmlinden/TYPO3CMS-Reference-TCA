@@ -39,9 +39,7 @@ An example is :file:`EXT:sys_note/Configuration/TCA/sys_note.php` for table "sys
 found by the bootstrap code (if starting a TYPO3 request). It must return an
 array with the content of the TCA setting or :code:`NULL` if the table
 should not be defined (depending on the extension's internal logic).
-The return value of any loaded file will be cached.
-So there must either be no dynamic PHP code in it or
-care must be taken to clear the system cache after each change in such files.
+The return value of any loaded file will be cached. Thus, if dynamic PHP code is used in a TCA definition file, the system cache must be cleared after each change in that file.
 
 
 .. toctree::
